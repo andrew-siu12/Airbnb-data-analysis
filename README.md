@@ -12,3 +12,17 @@ And applying machine learning models to predict the price for listings in London
 3. Whcih boroughs are more expensive,  and which areas have the best reviews?
 4. What are the factors that influence pricing on Airbnb listings?
 
+Random Forests and CatBoost were trained to predict the price of the listings in London.
+
+## Data 
+[Inside Airbnb](http://insideairbnb.com/get-the-data.html) has provided data that is sourced from public available infomration from Airbnb webiste. The data we used for this project is compiled on 05 May, 2019. The dataset comprised of three tables and a geojson file of London boroughs:
+* `listings` - Deatailed listings data for London
+* `calendar` - Deatailed bookings for the next calendar year of listings
+* `reviews` - Detailed reviews data for listings in London.
+* `neigbourhoods` - geojson file of boroughs of London.
+
+## File Descriptions
+
+
+
+## Conclusions
