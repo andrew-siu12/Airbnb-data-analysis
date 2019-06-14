@@ -22,7 +22,25 @@ Random Forests and CatBoost were trained to predict the price of the listings in
 * `neigbourhoods` - geojson file of boroughs of London.
 
 ## File Descriptions
+```
+
+│  Airbnb-data-analysis.html
+│  Airbnb-data-analysis.ipynb
+├─images
+└─preprocessed_data
+        listing.csv
+        listing_cat.csv
+```
+1. Airbnb-data-analysis.html: html file of the data analysis for London Airbnb
+2. Airbnb-data-analysis.ipynb: jupyter notebook of the analysis
+3. listing.csv - preprocessed version of airbnb data with one-hot encoded categorical data
+4. listing_cat.csv - preprocessed version of airbnb data without one-hot encoded categorical data used for CatBoost
 
 
 
 ## Conclusions
+* The demand for Airbnb increased exponentially over the years. 
+* Demand increases along the year until August and slowly decrease.
+* The cheapest month to book Airbnb is May.
+* Richmond upon Thames borough has the highest average review score ratings.
+* Our best model to predict the price is using Catboost which has a r2 score of 73.9%. This means that the model explain 73.9% of the variability in listing price. The result was not good enough. However, price is very different to predict correcly, and the remaining 26.1% may be explained by features that are not in the data. 
