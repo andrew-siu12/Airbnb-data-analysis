@@ -2,6 +2,8 @@
 data/
 catboost_info/
 .ipynb_checkpoints
+.idea
+_site
 
 # Packages #
 ############
