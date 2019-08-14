@@ -118,7 +118,7 @@ def review_plot(data, major_format, filename, xlabel, title, xlim=None, figsize=
     ax.set_ylabel('Number of reviews for unqiue listings')
     fig.tight_layout()
 
-    reviews_plot.figure.savefig(filename, dpi=800);
+    reviews_plot.figure.savefig(f"./images/{filename}", dpi=800);
 
     return reviews_plot
 

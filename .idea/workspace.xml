@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c67e322-d6e6-43db-9a7b-5f5fd094a31c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Airbnb Review data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Airbnb Review data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Airbnb calendar data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Airbnb calendar data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Airbnb-data-analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Airbnb-data-analysis.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Testing.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/experience_count.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/experience_count.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/host_response.png.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/host_response.png.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/property_type.png.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/property_type.png.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +15,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
+            <state relative-caret-position="-2109">
               <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
             </state>
           </provider>
@@ -32,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="227" column="26" lean-forward="true" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
+            <state relative-caret-position="573">
+              <caret line="120" column="54" selection-start-line="120" selection-start-column="54" selection-end-line="120" selection-end-column="54" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -76,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="952" />
     <option name="y" value="346" />
     <option name="width" value="1410" />
@@ -269,13 +261,6 @@
     <entry file="file://$PROJECT_DIR$/src/utils.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/neighbourhoods.geojson">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -283,10 +268,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2109">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="227" column="26" lean-forward="true" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
+        <state relative-caret-position="573">
+          <caret line="120" column="54" selection-start-line="120" selection-start-column="54" selection-end-line="120" selection-end-column="54" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
