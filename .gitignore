@@ -3,7 +3,7 @@ data/
 catboost_info/
 .ipynb_checkpoints/
 .idea/
-_site/
+_site
 
 # Packages #
 ############
