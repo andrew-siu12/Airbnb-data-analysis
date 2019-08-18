@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c67e322-d6e6-43db-9a7b-5f5fd094a31c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Airbnb-data-analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Airbnb-data-analysis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/rf_importance.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/rf_importance.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessed_data/listing.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessed_data/listing_cat.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model_tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_tuning.py" afterDir="false" />
-    </list>
+    <list default="true" id="8c67e322-d6e6-43db-9a7b-5f5fd094a31c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model_tuning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+            <state relative-caret-position="379">
+              <caret line="157" column="65" lean-forward="true" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="65" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -116,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1077" />
     <option name="y" value="226" />
     <option name="width" value="1410" />
@@ -298,8 +289,7 @@
     <option name="totallyTimeSpent" value="42199000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="862" y="181" width="1128" height="828" extended-state="0" />
-    <editor active="true" />
+    <frame x="862" y="181" width="1128" height="828" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.17307693" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -411,16 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -431,10 +411,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model_tuning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+        <state relative-caret-position="379">
+          <caret line="157" column="65" lean-forward="true" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="65" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
