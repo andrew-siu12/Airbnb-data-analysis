@@ -241,3 +241,15 @@ def london_map(geo_data, df, col, key_on, legend, marker=True):
         folium.Marker([51.50441, -0.08647], popup='The Shard').add_to(m)
 
     return m
+
+def evaluate(model, X_test, y_test):
+    y_test_pred = model.predict(X_test)
+    rmse_rf = (mean_squared_error(y_test, y_test_pred)) ** 0.5
+    r2score = r2_score(y_test, y_test_pred)
+    adj_r2 = 1 - (1 - r2score) * (X_test.shape[0] - 1) / (X_test.shape[0] - X_test.shape[1] - 1)
+
+    print(f'RMSE test: {rmse_rf}')
+    print(f'R2 score test: {r2score}')
+    print(f'Adjusted R2 score test: {adj_r2}')
+
+    return rmse_rf, r2score
