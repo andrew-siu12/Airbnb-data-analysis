@@ -1,12 +1,11 @@
 from src.feature_extraction import *
 from src.util import *
-from sklearn.model_selection import KFold, train_test_split
+from sklearn.model_selection import train_test_split
 import lightgbm as lgb
 from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 from const import *
 import csv
-from hyperopt.pyll.stochastic import sample
 from hyperopt import tpe, Trials, STATUS_OK, hp, fmin
 
 from timeit import default_timer as timer
@@ -92,8 +91,7 @@ def evaluate(results, name):
     new_results = new_results.sort_values('score', ascending=True).reset_index(drop=True)
 
     # Print out cross validation high score
-    print(f"The higest cross validation score from {name} was {new_results.loc[0, 'score']:.5f}"
-          f" found on iteration {new_results.loc[0, 'iteration']}")
+    print(f"The higest cross validation score from {name} was {new_results.loc[0, 'score']:.5f}")
 
     # Use best hyperparameters to create a model
     hyperparameters = new_results.loc[0, 'hyperparameters']
@@ -126,12 +124,12 @@ def evaluate(results, name):
 
 if __name__ == '__main__':
     # Create a file and open a connection
-    of_connection = open(OUT_FILE, 'w')
-    writer = csv.writer(of_connection)
+    # of_connection = open(OUT_FILE, 'w')
+    # writer = csv.writer(of_connection)
     # Write column names
-    writer.writerow(HEADERS)
-    print("Writing file has finished......")
-    of_connection.close()
+    # writer.writerow(HEADERS)
+    # print("Writing file has finished......")
+    # of_connection.close()
 
     listing = pd.read_csv('../preprocessed_data/listings.csv')
     for col in CATEGORY_COLUMNS:
@@ -162,11 +160,11 @@ if __name__ == '__main__':
         "verbose": -1
     }
     # record results
-    trials = Trials()
+    #trials = Trials()
 
-    best = fmin(fn=objective, space=space, algo=tpe.suggest, trials=trials,
-                max_evals=MAX_EVALS)
-    print(f"Params after tuning: {best}")
+    # best = fmin(fn=objective, space=space, algo=tpe.suggest, trials=trials,
+    #             max_evals=MAX_EVALS)
+    # print(f"Params after tuning: {best}")
 
     results = pd.read_csv(OUT_FILE)
     bayes_results = evaluate(results, name='BayesianFinal')
