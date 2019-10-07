@@ -253,3 +253,38 @@ def evaluate(model, X_test, y_test):
     print(f'Adjusted R2 score test: {adj_r2}')
 
     return rmse_rf, r2score
+
+
+def feature_importance_plot(X_train, model, filename):
+    """Plot the feature importance and print the top 20 feature importance returned
+       by the model.
+
+       Arguments
+       =========
+           X_train: The feature matrix
+           model: regression models
+           filename: str, name to save the resulting plot
+
+    """
+    feature_list = X_train.columns
+    feature_importance_df = pd.DataFrame(model.feature_importances_,
+                                         columns=['Importances'],
+                                         index=feature_list)
+    feature_importance_df.sort_values(by='Importances', ascending=False, inplace=True)
+    # print(feature_importance_df.head(20))
+
+    # Reset style
+    plt.style.use('fivethirtyeight')
+
+    fig, ax = plt.subplots(figsize=(27, 13))
+
+    feature_importance_df.head(20).plot(kind='barh', ax=ax,
+                                        color='r', edgecolor='k')
+
+    ax.set_title('Feature Importances')
+    ax.set_ylabel('Features')
+    ax.set_xlabel('Importance')
+
+    plt.savefig('../images/' + filename, dpi=1200);
+
+    return feature_importance_df
