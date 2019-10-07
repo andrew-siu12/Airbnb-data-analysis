@@ -4,6 +4,7 @@ import lightgbm as lgb
 from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 from const import *
+from util import feature_importance_plot
 
 import ast
 import warnings
@@ -60,8 +61,9 @@ def evaluate(results, train_features, train_labels, test_features, test_labels, 
     hyp_df['iteration'] = new_results['iteration']
     hyp_df['score'] = new_results['score']
 
-    return hyp_df
+    lightgbm_feature_imp = feature_importance_plot(train_features, model, "light_gbm_feature" )
 
+    return hyp_df, lightgbm_feature_imp
 
 
 def main():
@@ -69,11 +71,14 @@ def main():
     for col in CATEGORY_COLUMNS:
         listing.loc[:, col] = listing.loc[:, col].astype('category')
     price = pd.read_csv('../preprocessed_data/listings_price.csv', header=None, names=['price'])
+    listing.drop("id", axis=1, inplace=True)
     train_features, test_features, train_labels, test_labels = train_test_split(listing, price, test_size=0.2,
                                                                                 random_state=42)
 
     results = pd.read_csv(OUT_FILE)
-    bayes_results = evaluate(results, train_features, train_labels, test_features, test_labels, name='BayesianFinal')
+    bayes_results, lightgbm_feat_imp = evaluate(results, train_features, train_labels,
+                                                test_features, test_labels, name='BayesianFinal')
+
 
 if __name__ == '__main__':
     main()
