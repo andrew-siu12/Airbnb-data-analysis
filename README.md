@@ -23,19 +23,35 @@ Random Forests and LightGBM were trained to predict the price of the listings in
 
 ## File Descriptions
 ```
+.
+├── images
+├── models
+│   └── bayes_test.csv
+├── notebook
+│   ├── Airbnb\ Review\ data.ipynb
+│   ├── Airbnb\ calendar\ data.ipynb
+│   ├── Airbnb-data-analysis.ipynb
+│   └── Hyperparameter\ tuning.ipynb
+├── preprocessed_data
 
-│  Airbnb-data-analysis.html
-│  Airbnb-data-analysis.ipynb
-├─images
-└─preprocessed_data
-        listing.csv
-        listing_cat.csv
+└── src
+    ├── __pycache__
+    │   ├── const.cpython-37.pyc
+    │   ├── feature_extraction.cpython-37.pyc
+    │   ├── util.cpython-37.pyc
+    │   └── utils.cpython-37.pyc
+    ├── const.py
+    ├── feature_extraction.py
+    ├── final_model.py
+    ├── model_tuning.py
+    ├── pipeline.py
+    └── util.py
+
+
 ```
-1. Airbnb-data-analysis.html: html file of the data analysis for London Airbnb
-2. Airbnb-data-analysis.ipynb: jupyter notebook of the analysis
-3. listing.csv - preprocessed version of airbnb data with one-hot encoded categorical data
-4. listing_cat.csv - preprocessed version of airbnb data without one-hot encoded categorical data used for CatBoost
-
+* `models` - this folder contains the tuning hyperparameters stored in csv file
+* `notebook` - Contains EDA of review data, calendar data and pricing data, and hyperparameter tuning notebook
+* `src` - Pipeline script, prediction script and tuning script
 
 
 ## Conclusions
