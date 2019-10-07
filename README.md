@@ -43,4 +43,7 @@ Random Forests and LightGBM were trained to predict the price of the listings in
 * Demand increases along the year until August and slowly decrease.
 * The cheapest month to book Airbnb is May.
 * Richmond upon Thames borough has the highest average review score ratings.
-* Our best model to predict the price is using LightGBM tuned with hyperopts which has an adjusted r2 score of 77.476%. This means that the model explain 77.476% of the variability in listing price. The result was not good enough. However, price is very difficult to predict correcly, and the remaining 22.524% may be explained by features that are not used in the model. 
+* Our best model to predict the price is using LightGBM tuned with hyperopts which has an adjusted r2 score of 76.923%. This means that the model explain 76.923% of the variability in listing price. The result was not good enough. However, price is very difficult to predict correcly, and the remaining 23.077% may be explained by features that are not used in the model. 
+
+A summary post has been written on my own [blog](https://andrew-siu12.github.io/2019-06-15-Airbnb-Data-Analysis/)
+
