@@ -12,7 +12,7 @@ And applying machine learning models to predict the price for listings in London
 3. Whcih boroughs are more expensive,  and which areas have the best reviews?
 4. What are the factors that influence pricing on Airbnb listings?
 
-Random Forests and CatBoost were trained to predict the price of the listings in London.
+Random Forests and LightGBM were trained to predict the price of the listings in London.
 
 ## Data 
 [Inside Airbnb](http://insideairbnb.com/get-the-data.html) has provided data that is sourced from public available infomration from Airbnb webiste. The data we used for this project is compiled on 05 May, 2019. The dataset comprised of three tables and a geojson file of London boroughs:
@@ -43,4 +43,4 @@ Random Forests and CatBoost were trained to predict the price of the listings in
 * Demand increases along the year until August and slowly decrease.
 * The cheapest month to book Airbnb is May.
 * Richmond upon Thames borough has the highest average review score ratings.
-* Our best model to predict the price is using Catboost which has a r2 score of 73.9%. This means that the model explain 73.9% of the variability in listing price. The result was not good enough. However, price is very different to predict correcly, and the remaining 26.1% may be explained by features that are not in the data. 
+* Our best model to predict the price is using LightGBM tuned with hyperopts which has an adjusted r2 score of 77.476%. This means that the model explain 77.476% of the variability in listing price. The result was not good enough. However, price is very difficult to predict correcly, and the remaining 22.524% may be explained by features that are not used in the model. 
