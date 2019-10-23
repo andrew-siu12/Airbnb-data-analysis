@@ -15,18 +15,7 @@ warnings.filterwarnings("ignore")
 
 
 def objective(hyperparameters):
-    """
-       Return an Interactive choropleth map of London boroughs with some of the top london attractions mark on the map
-
-        Argument
-       ========
-       hyperparameters: dict, contains the model hyperparameters
-
-       Returns
-       ========
-       dictionary with information for evaluation
-
-       """
+   
     # Using early stopping to find number of trees trained
     if 'n_estimators' in hyperparameters:
         del hyperparameters['n_estimators']
